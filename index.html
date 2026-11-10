@@ -24,8 +24,15 @@
 
             <p>Digite a palavra secreta:</p>
 
-            <input type="password" id="palavra-secreta"
-                placeholder="Digite a palavra" autocomplete="off">
+            <input type="password" 
+                pattern="[^0-9]+" 
+                maxlength="5" 
+                id="palavra-secreta"
+                placeholder="Digite a palavra" 
+                title="A palavra secreta não pode conter números."
+                autocomplete="off" 
+                oninput="this.value = this.value.replace(/[0-9]/g, '')"
+                required>
 
             <button id="iniciar">Iniciar jogo</button>
 

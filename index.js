@@ -1,5 +1,3 @@
-alert("JavaScript funcionando!");
-
 let palavraSecreta = '';
 let erros = 0;
 let maxErros = 6;
@@ -51,10 +49,10 @@ if (
 
         let palavraDigitada = normalizar(campoSecreto.value);
 
-        if (!/^[A-Z]{3,10}$/.test(palavraDigitada)) {
+        if (!/^[A-Z]{5}$/.test(palavraDigitada)) {
 
             erroPainel.textContent =
-                'Digite somente letras, de 3 a 10 caracteres!';
+                'Digite somente letras, 5 caracteres!';
 
             return;
 
