@@ -1,0 +1,216 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #121213;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+/* PAINEL INICIAL */
+
+#painel-inicial {
+    background-color: #1e1e1f;
+    border: 1px solid #3a3a3c;
+    border-radius: 10px;
+    padding: 35px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#painel-inicial h2 {
+    margin-bottom: 15px;
+}
+
+#painel-inicial p {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+#palavra-secreta {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input {
+    background-color: #121213;
+    border: 2px solid #3a3a3c;
+    color: white;
+    padding: 13px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #818384;
+}
+
+button {
+    background-color: #538d4e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #477a43;
+}
+
+#erro-painel {
+    color: #ff5555;
+    margin-top: 15px;
+}
+
+/* JOGO */
+
+.escondido {
+    display: none !important;
+}
+
+#painel-jogo {
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+}
+
+.informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#tentativas {
+    font-size: 17px;
+}
+
+#imagem {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+/* QUADRADOS */
+
+#tabuleiro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 25px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.quadrado {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #3a3a3c;
+    background-color: #121213;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.correto {
+    background-color: #538d4e;
+    border-color: #538d4e;
+}
+
+.existe {
+    background-color: #b59f3b;
+    border-color: #b59f3b;
+}
+
+.errado {
+    background-color: #3a3a3c;
+    border-color: #3a3a3c;
+}
+
+/* ENTRADA */
+
+.entrada {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#palpite {
+    width: 65%;
+    text-transform: uppercase;
+}
+
+#mensagem {
+    margin: 20px 0;
+    font-weight: bold;
+    min-height: 20px;
+}
+
+#reiniciar {
+    background-color: #3a3a3c;
+}
+
+#reiniciar:hover {
+    background-color: #555;
+}
+
+/* CELULAR */
+
+@media (max-width: 450px) {
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    .quadrado {
+        width: 40px;
+        height: 40px;
+        font-size: 19px;
+    }
+
+    #imagem {
+        width: 85px;
+        height: 85px;
+    }
+
+    #painel-inicial {
+        padding: 25px;
+    }
+
+}

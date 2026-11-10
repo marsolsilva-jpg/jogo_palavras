@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe a Palavra</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ADIVINHE A PALAVRA</h1>
+    </header>
+
+    <main>
+
+        <!-- PAINEL INICIAL -->
+        <section id="painel-inicial">
+
+            <h2>Painel do organizador</h2>
+
+            <p>Digite a palavra secreta:</p>
+
+            <input type="password" id="palavra-secreta"
+                placeholder="Digite a palavra" autocomplete="off">
+
+            <button id="iniciar">Iniciar jogo</button>
+
+            <p id="erro-painel"></p>
+
+        </section>
+
+        <!-- PAINEL DO JOGO -->
+        <section id="painel-jogo" class="escondido">
+
+            <div class="informacoes">
+
+                <p id="tentativas">Tentativas: 0 de 6</p>
+
+                <img id="imagem" src="img/1.png" alt="Imagem da forca">
+
+            </div>
+
+            <div id="tabuleiro"></div>
+
+            <div class="entrada">
+
+                <input type="text" id="palpite"
+                    placeholder="Digite uma palavra" autocomplete="off">
+
+                <button id="enviar">Enviar</button>
+
+            </div>
+
+            <p id="mensagem"></p>
+
+            <button id="reiniciar">Voltar ao painel</button>
+
+        </section>
+
+    </main>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
