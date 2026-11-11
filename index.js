@@ -15,7 +15,7 @@ let botaoEnviar = document.getElementById('enviar');
 let botaoReiniciar = document.getElementById('reiniciar');
 
 let tabuleiro = document.getElementById('tabuleiro');
-let imagem = document.getElementById('imagem');
+
 
 let textoTentativas = document.getElementById('tentativas');
 let textoMensagem = document.getElementById('mensagem');
@@ -26,8 +26,7 @@ if (
     !painelInicial || !painelJogo ||
     !campoSecreto || !campoPalpite ||
     !botaoIniciar || !botaoEnviar ||
-    !botaoReiniciar || !tabuleiro ||
-    !imagem || !textoTentativas ||
+    !botaoReiniciar || !tabuleiro || !textoTentativas ||
     !textoMensagem || !erroPainel
 ) {
     console.error('Erro: confira os IDs dos elementos no HTML.');
@@ -76,7 +75,7 @@ if (
         campoPalpite.value = '';
         campoPalpite.maxLength = palavraSecreta.length;
 
-        imagem.src = 'img/1.png';
+   
 
         painelInicial.classList.add('escondido');
         painelJogo.classList.remove('escondido');
@@ -146,7 +145,7 @@ if (
         // Se errou, aumenta as tentativas
         erros++;
 
-        imagem.src = 'img/' + (erros + 1) + '.png';
+
 
         textoTentativas.textContent =
             'Tentativas: ' + erros + ' de ' + maxErros;
