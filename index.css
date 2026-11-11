@@ -8,14 +8,13 @@
 
 body {
     min-height: 100vh;
-    background-color: #121213;
+    background-color: #276749;
     color: white;
 }
 
 header {
     text-align: center;
     padding: 25px;
-    border-bottom: 1px solid #3a3a3c;
 }
 
 header h1 {
